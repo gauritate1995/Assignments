@@ -17,7 +17,7 @@ let customerInfo : customerDetails = {
 //Checking whether user is eligible to get the loan or not
 if (customerInfo.creditScore > 750){
     console.log("The loan is approved.");
-}else if (customerInfo.creditScore >=650 && customerInfo.creditScore<=750){
+}else if (customerInfo.creditScore >=650){
     if(customerInfo.income >= 50000){
         if(customerInfo.isEmployed === true){
             if(customerInfo.debtToIncomeRatio <= 40){
@@ -27,6 +27,7 @@ if (customerInfo.creditScore > 750){
             }
         }
     }
-}else if(customerInfo.creditScore < 650){
+}else if(
+    customerInfo.creditScore < 650){
     console.log("The loan is denied.");
 }
