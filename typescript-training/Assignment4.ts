@@ -47,13 +47,6 @@ function totalNumberOTransaction(transaction: Set<number>, credit: number, debit
 
     //3. Print total amount remaining at the end in Bank Account
     console.log(`Total amount remaining in Bank: ${totalAmount}`);
-
-
-
-
-
-
-
 }
 
 function totalAmountCredited(transaction: Set<number>): void {

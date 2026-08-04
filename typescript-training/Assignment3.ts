@@ -1,12 +1,12 @@
 function calculateAverageMarks(
-    studentName : string[],
+    studentName: string[],
     studentMarks: number[],
 ): void {
     let updatedMarks: number[] = [];
     let tempValue: number = 0;
-    
+
     //using for..of loop to iterate each and get marks from the list
-    for (let marks of studentMarks) { 
+    for (let marks of studentMarks) {
         //Adding 10 to each student marks using assignment operators        
         marks += 10;
         //storing marks into another array for each student
@@ -33,4 +33,4 @@ function calculateAverageMarks(
     console.log(`Average Marks: ${averageMarks}`);
 }
 
-calculateAverageMarks(["Suresh", "Mahesh", "Naresh"],[75, 80, 82]);
+calculateAverageMarks(["Suresh", "Mahesh", "Naresh"], [75, 80, 82]);
