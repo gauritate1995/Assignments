@@ -1,11 +1,10 @@
-//Assignment a:
+//Assignment 7:
 const sentence: string = "Java programming is fun and challenging";
-
+let value: string[] = sentence.split(" ");
 //1. Count the total number of words in the sentence.
-console.log("Total word count: " + sentence.length);
+console.log("Total word count: " + value.length);
 
 //2. Print the sentence words in reverse order.
-let value: string[] = sentence.split(" ");
 let reverseValue: string = " ";
 // Using for loop to iterate each value
 for (let i: number = value.length - 1; i >= 0; i--) {
@@ -23,28 +22,25 @@ for (let i: number = 0; i < value.length; i++) {
 console.log(`Reverse of the above sentence is: ${uppercaseValue}`);
 
 
-//Assignment b:
+//Assignment 8:
 let sentence2: string = "Java is a popular programming language. Java is used for web development, mobile applications, and more.";
 let value2: string[] = sentence2.split(" ");
 let occurrences: number = 0;
-let countWord: number = 0;
-let indexValue: string[] = [];
+
 // Using for loop to iterate each value
 for (let i: number = 0; i < value2.length; i++) {
     if (value2[i]!.includes("Java")) {
-        countWord = value2[i]!.length;
-
+        //2. Print count and Indexes of the word
+        console.log(`Index of 'Java' : ${i}`);
         ++occurrences;
     }
-    indexValue.push(value2[i]!);
 }
 
 //1. Find total number of occurrences
 console.log(`Total occurences of 'Java' : ${occurrences}`);
-//2. Print count and Indexes of the word
-console.log(`Count: ${countWord} and Index of 'Java' : ${indexValue.indexOf("Java")}`);
 
-//Assignment d:
+
+//Assignment 9:
 let row: number = 5;
 
 //using for loop to iterate in rows
